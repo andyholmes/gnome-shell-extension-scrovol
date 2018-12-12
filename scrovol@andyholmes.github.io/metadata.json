@@ -1,0 +1,9 @@
+{
+    "extension-id": "scrovol",
+    "uuid": "scrovol@andyholmes.github.io",
+    "name": "Scrovol",
+    "description": "Change the volume by scrolling anywhere on the User Menu",
+    "version": 1,
+    "shell-version": [ "3.28", "3.30" ],
+    "url": "https://github.com/andyholmes/gnome-shell-extension-scrovol/"
+}
