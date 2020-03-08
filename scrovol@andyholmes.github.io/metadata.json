@@ -3,7 +3,7 @@
     "uuid": "scrovol@andyholmes.github.io",
     "name": "Scrovol",
     "description": "Change the volume by scrolling anywhere on the System Tray.\n\nWith this extension, you can scroll over Night Light, WiFi, Volume, Battery or any other icon in the system status tray to change the volume, instead of just the Volume icon.",
-    "version": 1,
-    "shell-version": [ "3.28", "3.30" ],
+    "version": 2,
+    "shell-version": [ "3.28", "3.30", "3.32", "3.34" ],
     "url": "https://github.com/andyholmes/gnome-shell-extension-scrovol/"
 }
