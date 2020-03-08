@@ -5,7 +5,7 @@ const AggregateMenu = imports.ui.main.panel.statusArea.aggregateMenu;
 const VolumeIndicator = AggregateMenu._volume;
 
 // Scroll Signal Id
-var _onScrollEventId = null;
+var _onScrollEventId = 0;
 
 
 function init() {
@@ -19,7 +19,7 @@ function enable() {
     // Connect the same handler from the volume indicator to ::scroll-event
     _onScrollEventId = AggregateMenu._indicators.connect(
         'scroll-event',
-        VolumeIndicator._onScrollEvent.bind(VolumeIndicator)
+        VolumeIndicator.vfunc_scroll_event.bind(VolumeIndicator)
     );
 }
 
@@ -29,7 +29,7 @@ function disable() {
     if (_onScrollEventId) {
         AggregateMenu._indicators.reactive = false;
         AggregateMenu._indicators.disconnect(_onScrollEventId);
-        _onScrollEventId = null;
+        _onScrollEventId = 0;
     }
 }
 
