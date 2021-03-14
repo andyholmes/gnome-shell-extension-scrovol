@@ -17,10 +17,8 @@ function enable() {
     AggregateMenu._indicators.reactive = true;
 
     // Connect the same handler from the volume indicator to ::scroll-event
-    _onScrollEventId = AggregateMenu._indicators.connect(
-        'scroll-event',
-        VolumeIndicator.vfunc_scroll_event.bind(VolumeIndicator)
-    );
+    _onScrollEventId = AggregateMenu._indicators.connect('scroll-event',
+        VolumeIndicator._handleScrollEvent.bind(VolumeIndicator));
 }
 
 
